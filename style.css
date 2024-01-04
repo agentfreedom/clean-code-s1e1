@@ -16,6 +16,9 @@ body {
 .aaa .more_inf {
   font-family: fantasy, cursive;
 }
+h1{
+	display: none;
+}
 
 @media (max-width: 768px) {
   .aaa { 
@@ -35,7 +38,7 @@ body {
 .task-row-wrapper {
   display: flex;
 }
-ul {
+.ul {
   margin: 0;
   padding: 0px;
 }
@@ -94,7 +97,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+div {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -102,20 +105,20 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+div > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+div > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+div > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+div >    input[type="text"] {
   width: 226px;
 }
 button.delete img {
@@ -128,21 +131,21 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.ul#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.ul div input[type=text] {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+.ul div.editMode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+.ul div.editMode label {
   display: none;
 }

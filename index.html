@@ -14,7 +14,8 @@
     >
   </head>
   <body>
-    <div class="aaa">
+    <header class="aaa">
+			<h1>ToDo App</h1>
       <img src="./eisenhower-matrix.jpg" 
 			  alt="The eisenhower matrix. How to make decisions on What's urgent and important">
       <a 
@@ -23,9 +24,9 @@
       >
         Want more details?
       </a>
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
+    </header>
+    <main class="centered-main-page-element">
+      <section id="topSectionForAddingElementToList">
         <label for="new-task">Add Item</label>
         <div class="task-row-wrapper">
           <input 
@@ -35,10 +36,10 @@
           >
           <button>Add</button>
         </div>
-      </p>
+      </section>
       <h3>Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
+      <section id="incompleteTasks" class="ul">
+        <div>
           <input type="checkbox">
           <label class="task">Pay Bills</label>
           <input type="text" class="task">
@@ -46,8 +47,8 @@
           <button class="delete">
             <img src="./remove.svg" alt="The remove image">
           </button>
-        </li>
-        <li class="editMode">
+        </div>
+        <div class="editMode">
           <input type="checkbox">
           <label class="task">Go Shopping</label>
           <input 
@@ -58,11 +59,11 @@
           <button class="delete">
             <img src="./remove.svg" alt="The remove image">
           </button>
-        </li>
-      </ul>
+        </div>
+      </section>
       <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
+      <section id="completed-tasks" class="ul">
+        <div>
           <input type="checkbox" checked>
           <label class="task">See the Doctor</label>
           <input type="text" class="task">
@@ -70,9 +71,9 @@
           <button class="delete">
             <img src="./remove.svg" alt="The remove image">
           </button>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
