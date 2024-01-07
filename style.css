@@ -9,12 +9,14 @@ body {
   margin: 0 auto;
   display: block;
   text-align: right;
+	font-size: 0;
 }
 .header__img {
   width: 100%;
 }
 .header__link_info {
   font-family: fantasy, cursive;
+	font-size: 16px;
 }
 .header__title {
 	display: none;
@@ -28,22 +30,28 @@ body {
 .main {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
-.new-task__item {
+.task__add {
+	padding-top: 16px;
+}
+.task__item {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.new-task__wrapper {
+.task__wrapper {
   display: flex;
+	padding-top: 0;
+	padding-bottom: 16px;
+	border-bottom: none;
 }
-.ul {
+.tasks__list {
   margin: 0;
   padding: 0px;
 }
-li, 
-h3 {
+div, 
+.section__title {
   list-style: none;
 }
 input,
@@ -62,8 +70,11 @@ button {
 button:hover {
   color: #3a3a3a;
 }
+.delete{
+	padding-top: 2px;
+}
 /* Heading */
-h3,
+.section__title,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -77,7 +88,7 @@ input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
-  height: 21px;
+  height: 19px;
   padding: 0 9px;
   border: 1px solid #ddd;
   background: #fff;
@@ -101,7 +112,7 @@ input#new-task {
 /* Task list */
 div {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 18px 0;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
@@ -112,7 +123,8 @@ div > * {
 }
 
 div > input[type="checkbox"] {
-  margin: 0 10px;
+	height: 13px;
+  margin: 1px 10px 0;
 }
 div > label {
   padding-left: 10px;
@@ -133,21 +145,22 @@ button.delete img:hover {
 }
 
 /* Completed */
-.ul#completed-tasks label {
+.tasks__list#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.ul div input[type=text] {
+.tasks__list div input[type=text] {
   display: none;
 }
 
-.ul div.editMode input[type=text] {
+.tasks__list div.edit__mode input[type=text] {
   display: inline-block;
   width: 224px;
+	margin-top: 1px;
 }
 
-.ul div.editMode label {
+.tasks__list div.edit__mode label {
   display: none;
 }
