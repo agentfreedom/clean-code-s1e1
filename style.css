@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -50,15 +50,12 @@ body {
   margin: 0;
   padding: 0px;
 }
-div, 
-.section__title {
-  list-style: none;
-}
-input,
-button {
+
+.task__item,
+.btn {
   outline: none;
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -67,15 +64,14 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 .delete{
 	padding-top: 2px;
 }
 /* Heading */
-.section__title,
-label[for="new-task"] {
+.section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -101,7 +97,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.section__title_new-task {
   display: block;
   margin: 0 0 20px;
 }
@@ -135,12 +131,12 @@ div > label {
 div > input[type="text"] {
   width: 226px;
 }
-button.delete img {
+.btn__img-del {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.btn__img-del:hover {
   transform: rotateZ(0);
 }
 
