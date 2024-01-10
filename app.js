@@ -28,7 +28,7 @@ var createNewTaskElement=function(taskString){
 	label.classList.add("task__item");
 	//input (text)
 	var editInput = document.createElement("input");//text
-	editInput.classList.add("task__item");
+	editInput.classList.add("task__item", "task__item_add");
 	//button.edit
 	var editButton = document.createElement("button");//edit button
 	editButton.classList.add("btn", "edit");

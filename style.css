@@ -80,7 +80,8 @@
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+/* input[type="text"]  */
+.task__item_add {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -92,7 +93,8 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+/* input[type="text"]:focus  */
+.task__item_add:hover {
   color: #333;
 }
 
@@ -101,7 +103,8 @@ input[type="text"]:focus {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+/* input#new-task  */
+.task__item_add {
   width: 318px;
 }
 
